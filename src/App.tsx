@@ -1,10 +1,17 @@
-import React from 'react';
-import Demo from './Demo/index';
+import { Canvas } from "@react-three/fiber";
+import {OrbitControls} from '@react-three/drei';
+import Skybox from './components/Skybox';
 
 function App() {
   return (
     <div className="App">
-      <Demo />
+      <Canvas>
+        <ambientLight />
+        <pointLight />
+        <OrbitControls />
+
+        <Skybox />
+      </Canvas>
     </div>
   );
 }
