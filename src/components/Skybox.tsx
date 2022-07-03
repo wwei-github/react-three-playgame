@@ -11,16 +11,16 @@ function Skybox() {
   return (
     <>
       <Stars
-        radius={140}
+        radius={130}
         depth={10}
-        count={7000}
+        count={10000}
         factor={25}
         saturation={0}
         fade
-        speed={2}
+        speed={1}
       />
       <mesh>
-        <sphereGeometry attach="geometry" args={[300, 300, 300]} />
+        <sphereGeometry attach="geometry" args={[300, 10, 10]} />
         <meshPhongMaterial
           attach="material"
           map={texture}
