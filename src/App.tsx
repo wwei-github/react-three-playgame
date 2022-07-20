@@ -1,5 +1,5 @@
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
+// import { OrbitControls } from "@react-three/drei";
 import { Physics } from "@react-three/cannon";
 import Skybox from "./components/Skybox";
 import Ground from "./components/Ground";
@@ -12,7 +12,6 @@ function App() {
       <Canvas>
         <ambientLight />
         <pointLight />
-        <OrbitControls />
 
         <Skybox />
         <Physics>
